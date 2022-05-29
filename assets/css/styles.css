@@ -190,6 +190,7 @@ input {
 /* Header */
 .header {
   width: 100%;
+  padding: 0.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -311,57 +312,29 @@ input {
   object-position: 80%;
 }
 
+.home__data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .home__container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: calc(100vh - var(--header-height));
   align-content: center;
   row-gap: 3rem;
 }
 
-.home__data-title,
-.home__info {
-  color: var(--white-color);
-}
-
 .home__data-title {
   font-size: var(--large-font-size);
-  font-weight: var(--font-medium);
-  margin-bottom: var(--mb-2-5);
-}
-
-.home__info {
-  background-color: var(--primary-color);
-  padding: 1.5rem 1rem;
-  align-items: center;
-  column-gap: 0.5rem;
-  position: absolute;
-  right: 0;
-  bottom: 1rem;
-  width: 228px;
-}
-
-.home__info-title {
-  display: block;
-  font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
-  margin-bottom: var(--mb-0-75);
-}
-
-.home__info-button {
-  font-size: var(--smaller-font-size);
-}
-
-.home__info-overlay {
-  overflow: var(--img-hidden);
-}
-
-.home__info-img {
-  width: 145px;
-  transition: var(--img-transition);
-}
-
-.home__info-img:hover {
-  transform: var(--img-scale);
+  margin-bottom: var(--mb-2-5);
+  color: var(--white-color);
+  text-align: center;
 }
 
 /* Tombol */
@@ -373,6 +346,7 @@ input {
   font-weight: var(--font-semi-bold);
   transition: 0.3s;
   border-radius: 2px;
+  align-self: center;
 }
 
 .button:hover {
@@ -795,10 +769,7 @@ input {
   .experience__overlay:nth-child(2) {
     width: 80px;
   }
-  .home__info {
-    width: 190px;
-    padding: 1rem;
-  }
+
   .experience__img,
   .video__container {
     padding: 0;
@@ -879,7 +850,7 @@ input {
     grid-template-rows: 1.8fr 0.5fr;
   }
   .home__data {
-    align-self: flex-end;
+    align-self: center;
   }
   .home__social {
     flex-direction: row;
@@ -887,9 +858,7 @@ input {
     margin-bottom: 3rem;
     column-gap: 2.5rem;
   }
-  .home__info {
-    bottom: 3rem;
-  }
+
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -946,17 +915,7 @@ input {
   .home__container {
     grid-template-rows: 2fr 0.5fr;
   }
-  .home__info {
-    width: 328px;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 2rem;
-  }
-  .home__info-title {
-    font-size: var(--normal-font-size);
-  }
-  .home__info-img {
-    width: 240px;
-  }
+
   .about__img-one {
     width: 230px;
   }
@@ -967,7 +926,7 @@ input {
     width: 237px;
   }
   .discover__container {
-    width: 700px;
+    width: 1200px;
   }
   .discover__data {
     left: 1.5rem;

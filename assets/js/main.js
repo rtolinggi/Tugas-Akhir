@@ -122,7 +122,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.home__data,.home__info,
+  `.home__data,
            .discover__container,
            .experience__data, .experience__overlay,
            .place__card,
